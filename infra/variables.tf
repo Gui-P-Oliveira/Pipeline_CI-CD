@@ -1,6 +1,6 @@
 variable "app_name" {
   type    = string
-  default = "ms-saudacoes-aleatorias"
+  default = "ms-saudacoes-aleatorias2"
 }
 
 variable "service_name" {

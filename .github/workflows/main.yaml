@@ -12,7 +12,7 @@ on:
 env:
   DOCKER_USER: guipeoliveira
   DOCKER_IMAGE_NAME: guipeoliveira/ms-saudacoes-aleatorias
-  DOCKER_IMAGE_TAG: 1.0${{ github.run_id}}
+  DOCKER_IMAGE_TAG: latest
   SERVICE_NAME: saudacoes-aleatorias
 
 jobs:

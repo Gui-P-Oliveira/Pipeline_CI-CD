@@ -1,10 +1,6 @@
 variable "app_name" {
   type    = string
-<<<<<<< HEAD
   default = "ms-saudacoes-aleatorias"
-=======
-  default = "ms-saudacoes-aleatoria"
->>>>>>> c1be4f62d1c0bf4146d192a438a74b9d9c993d2e
 }
 
 variable "service_name" {

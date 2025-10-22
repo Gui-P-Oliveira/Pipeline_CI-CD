@@ -11,12 +11,12 @@ provider "koyeb" {
   #
 }
 
-resource "koyeb_app" "my-app" {
+data "koyeb_app" "existing_app" {
   name = var.app_name
 }
 
 resource "koyeb_service" "my-service" {
-  app_name = var.app_name
+  app_name = data.koyeb_app.existing_app.name
   definition {
     name = var.service_name
     instance_types {
@@ -44,9 +44,5 @@ resource "koyeb_service" "my-service" {
     docker {
       image = "${var.docker_image_name}:${var.docker_image_tag}"
     }
-  }
-
-  depends_on = [
-    koyeb_app.my-app
-  ]
+  }  
 }

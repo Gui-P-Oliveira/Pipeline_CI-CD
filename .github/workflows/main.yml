@@ -12,8 +12,13 @@ on:
 
 env:
   DOCKER_USER: guipeoliveira
+<<<<<<< HEAD:.github/workflows/main.yml
   DOCKER_IMAGE_NAME: ${{ vars.DOCKER_USER || 'guipeoliveira' }}/ms-saudacoes-aleatorias
   DOCKER_IMAGE_TAG: 1.0.${{ github.run_id }}
+=======
+  DOCKER_IMAGE_NAME: guipeoliveira/ms-saudacoes-aleatorias
+  DOCKER_IMAGE_TAG: latest
+>>>>>>> 1f28b2039d43b6ac4752699e6d58cd1913e3aa0f:.github/workflows/main.yaml
   SERVICE_NAME: saudacoes-aleatorias
 
 jobs:
